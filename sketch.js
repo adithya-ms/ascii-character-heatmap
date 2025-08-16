@@ -10,8 +10,6 @@ function setup() {
   video.hide();
   textFont('monospace', charSize);
   textAlign(LEFT, TOP);
-  if (windowWidth < 500) charSize = 8;
-  else charSize = 12;
 }
 
 function windowResized() {

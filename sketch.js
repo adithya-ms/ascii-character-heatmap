@@ -1,4 +1,4 @@
-let ramp = "█▓▒░+*=-:.";
+let ramp = "@#W$9876543210?!abc;:,. ";
 let video;
 let charSize = 12;
 let t = 0;

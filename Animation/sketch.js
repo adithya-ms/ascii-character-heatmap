@@ -1,17 +1,17 @@
 let ramp = "█▓▒░+*=-:.";
 let video;
-let charSize = 12;
+if (windowWidth < 500) charSize = 8;
+else charSize = 12;
 let t = 0;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   video = createCapture(VIDEO);
-  video.size(width / charSize, height / charSize); // downscale for ASCII
+  video.size(width/charSize, height/charSize); // downscale for speed
   video.hide();
   textFont('monospace', charSize);
   textAlign(LEFT, TOP);
-  if (windowWidth < 500) charSize = 8;
-  else charSize = 12;
+  frameRate(30);
 }
 
 function windowResized() {
